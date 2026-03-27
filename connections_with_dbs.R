@@ -1,7 +1,8 @@
 #Connecting to mysql
 library(RMysql)
 #connection string
-mydb = dbConnect(MySQL(), user='root', password='bda123',dbname='world', host='localhost')
+mydb = dbConnect(MySQL(), user='root', password='bda123',
+                 dbname='world', host='localhost')
 #Lists tables in the database
 dbListTables(mydb)
 

@@ -44,7 +44,17 @@ d <- array(dim = c(5))
 d
 
 g <- array(dim=c(4,6))
-g
+
+# 1. Define your data vector
+values <- c(10, c(10,10), 30, 40, 50)
+
+# 2. Initialize the array (2 rows, 3 columns)
+# The data is mapped to the dimensions specified
+my_array <- array(data = values, dim = c(2, 3,2))
+
+# View the result
+my_array
+my_array[1,3,2]
 
 a <-array(dim=c(3,5,2))
 a
@@ -54,7 +64,7 @@ a <- c("Atul","Pravin","Shwetha","Rekha")
 b <- c(23,34,32,29)
 df <- data.frame(a,b,p)
 df
-#############################################
+ v                                                                                                                                                                                                                                                                                #############################################
 
 
 a <- read.csv("D:/Student Drive/R/Dataset/Datasets/A.csv")
@@ -99,7 +109,7 @@ data(CO2)
 data(Formaldehyde)
 
 #writes data set to a file
-write.csv(Formaldehyde,"forma.csv")
+write.csv(Formaldehyde,"forma1.csv")
 
 v <- c(34,56,76,87,12,14,98,67)
 v>50
